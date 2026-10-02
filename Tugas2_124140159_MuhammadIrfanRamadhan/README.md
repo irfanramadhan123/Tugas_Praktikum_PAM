@@ -11,3 +11,7 @@ Aplikasi News Feed Simulator, clone dari Tugas 1, sesuai tugas Pertemuan 2:
 3. Transform data menjadi format tampil `[KATEGORI] Judul` (`NewsDisplay`)
 4. StateFlow menyimpan jumlah berita yang sudah dibaca (`readCount`)
 5. Coroutines untuk mengambil detail berita secara async (`fetchDetail` + `loadDetail`)
+
+## Screenshot Aplikasi
+
+![Screenshot Aplikasi](screenshotpertemuan2.png)
