@@ -8,7 +8,8 @@ Monorepo tugas praktikum Pengembangan Aplikasi Mobile.
 
 ## Struktur
 
-- Tugas1/ - Tugas 1 PAM - Kotlin Multiplatform (dari PAM_2026_Irfan)
-- Tugas2/ - masih dalam proses pengerjaan (menyusul)
-- Tugas3/ - Tugas 3 PAM - My Profile App (dari Tugas_PAM_Pertemuan_3)
+- Tugas1_124140159_MuhammadIrfanRamadhan/ - Tugas 1 PAM - Kotlin Multiplatform
+- Tugas2_124140159_MuhammadIrfanRamadhan/ - Tugas 2 (menyusul)
+- Tugas3_124140159_MuhammadIrfanRamadhan/ - Tugas 3 PAM - My Profile App
+- Tugas4_124140159_MuhammadIrfanRamadhan/ - Tugas 4 (placeholder)
 
