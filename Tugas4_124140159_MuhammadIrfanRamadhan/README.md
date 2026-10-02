@@ -9,3 +9,17 @@ Kembangan Profile App minggu lalu (clone dari Tugas 3), sesuai tugas Pertemuan 4
 1. MVVM: `ProfileViewModel` dengan StateFlow + `data class ProfileUiState`
 2. Edit Profile: form nama & bio, state hoisting TextField, tombol Save update ViewModel
 3. Dark Mode Toggle: Switch, state disimpan di ViewModel
+
+## Screenshot Aplikasi
+
+Light mode:
+
+![Light Mode](SSlighttheme.png)
+
+Dark mode:
+
+![Dark Mode](SSdarktheme.png)
+
+Form edit profile:
+
+![Edit Profile](SSeditprofile.png)

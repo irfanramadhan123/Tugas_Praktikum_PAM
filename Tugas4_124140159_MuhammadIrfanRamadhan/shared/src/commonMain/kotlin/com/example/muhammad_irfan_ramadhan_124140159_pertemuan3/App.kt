@@ -19,6 +19,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.darkColorScheme
@@ -45,9 +46,14 @@ fun App(viewModel: ProfileViewModel = androidx.lifecycle.viewmodel.compose.viewM
     MaterialTheme(
         colorScheme = if (state.isDarkMode) darkColorScheme() else lightColorScheme()
     ) {
+        // Surface menyediakan content color (onBackground) yang otomatis
+        // putih di dark mode dan hitam di light mode untuk semua Text di dalamnya
+        Surface(
+            modifier = Modifier.fillMaxSize(),
+            color = MaterialTheme.colorScheme.background
+        ) {
         Column(
             modifier = Modifier
-                .background(MaterialTheme.colorScheme.background)
                 .safeContentPadding()
                 .fillMaxSize()
                 .padding(16.dp),
@@ -58,7 +64,11 @@ fun App(viewModel: ProfileViewModel = androidx.lifecycle.viewmodel.compose.viewM
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Text("Dark Mode", modifier = Modifier.weight(1f))
+                Text(
+                    text = if (state.isDarkMode) "Light Mode" else "Dark Mode",
+                    modifier = Modifier.weight(1f),
+                    color = MaterialTheme.colorScheme.onBackground
+                )
                 Switch(
                     checked = state.isDarkMode,
                     onCheckedChange = { viewModel.toggleDarkMode(it) }
@@ -123,6 +133,7 @@ fun App(viewModel: ProfileViewModel = androidx.lifecycle.viewmodel.compose.viewM
             Button(onClick = {}) {
                 Text("Hubungi Saya")
             }
+        }
         }
     }
 }
